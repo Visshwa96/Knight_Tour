@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-gap: 2px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.wall {
+    background-color: #000;
+}
+
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
+}
+
+.path {
+    background-color: yellow;
+}
+
+#log {
+    position:relative;
+    bottom: 325px;
+    right:300px;
+    text-align: left;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 90%;
+    overflow-y: auto;
+    height: 300px;
+    background-color: #f9f9f9;
+}
